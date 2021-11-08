@@ -3,13 +3,11 @@ import { Row, Col, Container, Button } from 'react-bootstrap'
 import dataTesters from '../../Assets/data.json'
 
 class ProductList extends React.Component {
-    HoverImages = (e) => {
-        document.querySelector(`#idbut${e}`).style.display = 'block'
-    } 
+
+    HoverImages = (e) => { document.querySelector(`#idbut${e}`).style.display = 'block' } 
     
-    LeaveImages = (e) => {
-        document.querySelector(`#idbut${e}`).style.display = 'none'
-    }
+    LeaveImages = (e) => { document.querySelector(`#idbut${e}`).style.display = 'none'  }
+
 
     render() {
         return (
