@@ -8,6 +8,8 @@ class ProductList extends React.Component {
     
     LeaveImages = (e) => { document.querySelector(`#idbut${e}`).style.display = 'none'  }
 
+    ClickImages = (e) => { window.location.href=`/product/${e}/detail` }
+
 
     render() {
         return (
@@ -21,7 +23,7 @@ class ProductList extends React.Component {
                     {
                         dataTesters.map((item, index) => {
                             return (
-                                <Col md="4" className="wrapper-box-detail-new" id={`id${index}`} key={index} onMouseOver={()=>this.HoverImages(index)} onMouseLeave={()=>this.LeaveImages(index)}>
+                                <Col md="4" className="wrapper-box-detail-new" id={`id${index}`} key={index} onMouseOver={()=>this.HoverImages(index)} onMouseLeave={()=>this.LeaveImages(index)} onClick={()=>this.ClickImages(item.idproduk)}>
                                     <Row className="wrapper-box-list-new">
                                         <Col md="12" className="img-class" style={{
                                             backgroundImage: `url(${require('../../'+item.image).default})`
@@ -30,6 +32,7 @@ class ProductList extends React.Component {
                                             <p style={{fontWeight:"bold"}}>{item.nameproduk}</p>
                                         </Col>
                                     </Row>
+                                    {/* <Row className="wrapper-box-list-new2" id={`idbut${index}`} style={this.state.dsp === false ? {display: 'none'} : {display: 'block'} }> */}
                                     <Row className="wrapper-box-list-new2" id={`idbut${index}`} style={{display: 'none'}}>
                                         <Col md="12" className="tittle-class text-center">
                                             <Button variant="success" className="btn-detail">Detail</Button>
