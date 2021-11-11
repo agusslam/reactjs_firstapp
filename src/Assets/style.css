@@ -535,3 +535,132 @@ body {
 }
 /* End CSS Detail */
 
+/* Start CSS Detail Produk */
+
+#prod-detail {
+    height:fit-content;
+    position: relative;
+    margin-top: 3%;
+    padding-left: 8%;
+}
+.image-detail {
+    height: 300px;
+    width: 280px;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    box-shadow: 3px 3px 15px rgb(0 0 0 / 10%);
+    background-color: #FAFAFA;
+    background-position: center;
+    background-origin: content-box;
+    padding: 25px;
+}
+
+.wrapper-desc {
+    padding-left: 25px;
+}
+
+.title {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.description {
+    height: 150px;
+}
+
+.titikdua {
+    text-align: center;
+    width: 50px;
+}
+
+.desc-detail {
+    text-align: justify;
+}
+
+.buy {
+    background-color: #6CBE5E;
+    color: rgba(255,255,255,0.8);
+    border: none;
+}
+
+.buy:hover {
+    background-color: #2e6923;
+    color: rgba(255,255,255,0.8);
+    border: none;
+}
+
+.title-slider {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.wrapper-ulas{
+    font-size: 14px;
+    line-height: 12px;
+}
+
+.title-ulas {
+    margin-top: 25px;
+}
+
+/* End CSS Detail Produk */
+
+/* Start CSS OMDB */
+.product-list-new {
+    margin-top: 25px;
+}
+
+.product-list-new h6 {
+    font-weight: 600;
+    font-size: 35px;
+}
+
+.wrapper-box-omdb {
+    padding-left: 9%;
+    padding-right: 3%;
+    padding-top: 20px;
+    padding-bottom: 2%;
+}
+
+.wrapper-box-detail-omdb {
+    padding-right: 70px;
+    height: 440px;
+    /* margin-bottom: 50px; */
+    position: relative;
+}
+
+.wrapper-box-list-omdb {
+    height: 375px;
+    background-color: rgba(148, 148, 148, 0.158);
+    box-shadow: 3px 3px 15px rgba(114, 114, 114, 0.4);
+    border-radius: 10px;
+    position: absolute;
+    width: 80%;
+}
+
+.img-class-omdb {
+    height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-prod-omdb {
+    height: 100%;
+    width: 100%;
+}
+
+.tittle-class-omdb {
+    height: 55px;
+    font-weight: 600;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.tittle-class-omdb a{
+    text-decoration: none;
+    font-size: 14px;
+}
+/* End OMDB */

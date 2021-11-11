@@ -6,6 +6,17 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import Routes from './Router'
 
+import { createStore, combineReducers } from 'redux'
+import { Provider } from 'react-redux';
+
+//reducer
+import UserReducer from './Redux/UserReducers'
+
+const CombinedReducers = combineReducers({UserReducer})
+
+//create store
+
+
 ReactDOM.render(
   <React.StrictMode>
     <Routes />
